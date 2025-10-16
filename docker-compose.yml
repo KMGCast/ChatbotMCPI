@@ -1,0 +1,20 @@
+
+services:
+  chatbot:
+    #Construcción de img
+    build:
+      context: .
+    image: tutor-mcpi-app
+    container_name: tutor-mcpi-chatbot
+
+    # Mapear al puerto especificado
+    ports:
+      - "8000:80"
+
+    #
+    volumes:
+      - .:/app
+
+    environment:
+      PYTHONUNBUFFERED: 1
+      DEBUG: True

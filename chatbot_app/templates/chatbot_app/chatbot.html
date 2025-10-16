@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TutorMCPI - Chatbot Académico</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e8eaf6; padding: 20px; display: flex; justify-content: center; }
+        .chat-container { width: 100%; max-width: 600px; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); display: flex; flex-direction: column; min-height: 400px; }
+        .chat-header { background-color: #3f51b5; color: white; padding: 15px; border-top-left-radius: 12px; border-top-right-radius: 12px; text-align: center; }
+        #chat-history { flex-grow: 1; padding: 20px; overflow-y: auto; max-height: 300px; }
+        .message-box { padding: 10px; margin-bottom: 8px; border-radius: 15px; max-width: 80%; }
+        .user { margin-left: auto; background-color: #bbdefb; text-align: right; }
+        .bot { margin-right: auto; background-color: #fce4ec; text-align: left; }
+        .input-area { padding: 15px; border-top: 1px solid #ddd; display: flex; }
+        textarea { flex-grow: 1; padding: 10px; border-radius: 8px; border: 1px solid #ccc; resize: none; margin-right: 10px; }
+        button { padding: 10px 15px; background-color: #3f51b5; color: white; border: none; border-radius: 8px; cursor: pointer; transition: background-color 0.3s; }
+        button:hover { background-color: #303f9f; }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>TutorMCPI - Asistente Académico</h3>
+        </div>
+        <div id="chat-history">
+            <div class="message-box bot">Hola, soy TutorMCPI. Pregúntame sobre materias, horarios, docentes y trámites.</div>
+        </div>
+
+        <div class="input-area">
+            <textarea id="question-input" rows="2" placeholder="Escribe tu pregunta aquí..."></textarea>
+            <button onclick="sendQuestion()">Enviar</button>
+        </div>
+        <div style="padding: 0 15px 15px;">
+            <small>Etiqueta Predicha: <span id="predicted-label" style="font-weight: bold;">N/A</span></small>
+        </div>
+    </div>
+
+    <script>
+        function sendQuestion() {
+            const input = document.getElementById('question-input');
+            const question = input.value;
+            const history = document.getElementById('chat-history');
+            const labelSpan = document.getElementById('predicted-label');
+            
+            if (question.trim() === "") return;
+
+            // 1. Mostrar la pregunta del usuario
+            history.innerHTML += `<div class="message-box user">${question}</div>`;
+            input.value = ''; // Limpiar input
+            history.scrollTop = history.scrollHeight; // Scroll automático
+
+            // 2. Enviar la pregunta al backend de Django
+            fetch("{% url 'chatbot_response' %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': '{{ csrf_token }}' // Necesario para seguridad en Django
+                },
+                body: `pregunta=${encodeURIComponent(question)}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                // 3. Mostrar la respuesta del bot
+                history.innerHTML += `<div class="message-box bot">${data.respuesta}</div>`;
+                labelSpan.textContent = data.etiqueta || 'default';
+                history.scrollTop = history.scrollHeight;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                history.innerHTML += `<div class="message-box bot">Error de conexión con el modelo.</div>`;
+            });
+        }
+        
+        // Permite enviar con la tecla Enter
+        document.getElementById('question-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendQuestion();
+            }
+        });
+    </script>
+</body>
+</html>

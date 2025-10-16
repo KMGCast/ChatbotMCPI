@@ -1,0 +1,101 @@
+pregunta,etiqueta
+¿Cuáles son las materias del segundo semestre?,materias
+¿Dónde está el edificio de ingeniería?,ubicacion
+¿Cuándo comienzan las inscripciones?,fechas
+¿Quién es el profesor de programación?,docente
+¿Qué horario tiene la materia de álgebra?,horarios
+¿Qué requisitos necesito para tramitar mi beca?,trámites
+¿Cuál es el costo de la matrícula de este semestre?,costos
+¿A qué hora cierra la biblioteca central?,horarios
+¿Dónde puedo encontrar el reglamento estudiantil?,información
+¿Quién es el coordinador de la carrera de física?,docente
+¿Cuáles son los temas que cubre el examen de admisión?,materias
+¿Cuándo es la fecha límite para dar de baja una materia?,fechas
+¿Cuál es la dirección del campus de ciencias sociales?,ubicacion
+¿Se puede pagar la colegiatura en línea?,trámites
+¿Cuál es el promedio mínimo para ingresar a posgrado?,requisitos
+¿Qué libros se usan en la clase de historia moderna?,materiales
+¿Hay servicio de cafetería en el edificio de humanidades?,servicios
+¿Dónde se ubica la oficina de servicios escolares?,ubicacion
+¿Qué días da clases el Dr. Pérez?,horarios
+¿Cómo puedo solicitar una constancia de estudios?,trámites
+¿Cuál es la duración total de la carrera de medicina?,información
+¿Cuánto cuesta el estacionamiento mensual para estudiantes?,costos
+¿Hay un club de ajedrez en la universidad?,actividades
+¿Cuál es el nombre de la materia optativa de inteligencia artificial?,materias
+¿Quién imparte la clase de cálculo avanzado?,docente
+¿Cuál es la fecha del examen final de química?,fechas
+¿Necesito seguro médico para la inscripción?,requisitos
+¿Cómo me inscribo a las actividades deportivas?,trámites
+¿Dónde está el laboratorio de idiomas?,ubicacion
+¿Qué profesor está a cargo del seminario de tesis?,docente
+¿Cuánto cuesta el curso de verano de matemáticas?,costos
+¿A qué hora empieza la jornada de inducción?,horarios
+¿Cuál es el plan de estudios de la licenciatura en derecho?,información
+¿Qué materias se cursan en el primer año?,materias
+¿Dónde compro la credencial de estudiante?,trámites
+¿Hasta qué hora está abierta la sala de cómputo?,horarios
+¿Quién es el contacto para movilidad estudiantil?,docente
+¿Cuándo inicia el periodo de reinscripción?,fechas
+¿Puedo pagar con tarjeta de crédito en caja?,trámites
+¿Se requiere un certificado de inglés para graduarse?,requisitos
+¿Qué servicios ofrece el centro de salud universitario?,servicios
+¿En qué piso está la oficina de becas?,ubicacion
+¿Cuáles son los temas del proyecto de investigación?,materias
+¿Cuánto tiempo dura el periodo de exámenes extraordinarios?,fechas
+¿Cómo solicito un cambio de grupo?,trámites
+¿Cuál es la cuota por semestre para alumnos de intercambio?,costos
+¿Quién es el director de la facultad de artes?,docente
+¿Qué actividades culturales hay esta semana?,actividades
+¿Dónde se localiza el auditorio principal?,ubicacion
+¿Qué día se publica el calendario escolar?,fechas
+¿Necesito tener un promedio mínimo para solicitar beca?,requisitos
+¿Qué materiales didácticos recomienda el profesor de física?,materiales
+¿Hay becas deportivas disponibles?,información
+¿A qué hora puedo consultar al orientador vocacional?,horarios
+¿Cuánto cuesta reponer mi credencial?,costos
+¿Cómo tramito mi baja temporal?,trámites
+¿Qué profesor da la clase de estadística avanzada?,docente
+¿Dónde se encuentra la imprenta universitaria?,ubicacion
+¿Cuál es el temario de la materia de economía?,materias
+¿Cuándo es la graduación de mi generación?,fechas
+¿Hay servicio de guardería en el campus?,servicios
+¿Qué documentos necesito para el título?,requisitos
+¿Qué opciones de titulación existen?,trámites
+¿Cuál es el horario del transporte interno del campus?,horarios
+¿Quién es el responsable de la bolsa de trabajo?,docente
+¿Dónde se entregan los papeles de servicio social?,ubicacion
+¿Cuál es el costo por examen extraordinario?,costos
+¿Qué talleres extracurriculares se ofrecen?,actividades
+¿Qué temas se abordarán en la siguiente conferencia?,información
+¿Cuándo sale la convocatoria de intercambio?,fechas
+¿Cuál es el código postal de la universidad?,ubicacion
+¿Qué profesor es el jefe de la división de posgrado?,docente
+¿A qué hora tengo clase de laboratorio?,horarios
+¿Se aceptan pagos parciales de colegiatura?,trámites
+¿Cuáles son los temas de la tesis de maestría?,materias
+¿Cuál es la fecha límite para mi servicio social?,fechas
+¿Qué costo tiene el examen TOEFL?,costos
+¿Qué necesito para revalidar materias de otra universidad?,requisitos
+¿Dónde está el área de fotocopiado?,ubicacion
+¿Quién me puede ayudar con un problema técnico en la plataforma?,servicios
+¿Qué libros son obligatorios para la materia de filosofía?,materiales
+¿Cuál es el procedimiento para darme de alta en el seguro estudiantil?,trámites
+¿El campus tiene acceso para personas con discapacidad?,información
+¿Hay actividades de voluntariado disponibles?,actividades
+¿A qué hora abre el gimnasio de la universidad?,horarios
+¿Cuál es el monto de la beca de manutención?,costos
+¿Cuándo son las vacaciones de invierno?,fechas
+¿Quién es el tutor académico de mi grupo?,docente
+¿Qué materias son prerrequisito para redes?,materias
+¿Dónde está la parada de autobuses más cercana?,ubicacion
+¿Cuáles son los requisitos para un egreso temprano?,requisitos
+¿Cómo puedo solicitar un espacio para un evento?,trámites
+¿Hay un buzón de quejas y sugerencias?,servicios
+¿Qué tipo de becas ofrece la universidad?,información
+¿Cuál es el horario de atención de la coordinación?,horarios
+¿Cuánto tiempo tengo para terminar la tesis después de egresar?,fechas
+¿Quién me puede orientar sobre mi plan de estudios?,docente
+¿Qué incluye el costo de la colegiatura?,costos
+¿Dónde puedo consultar mis calificaciones oficiales?,trámites
+¿Qué otras carreras ofrece la facultad de ciencias?,materias
